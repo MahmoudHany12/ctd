@@ -7,19 +7,14 @@ def fcomp():
     e1=a1.get()
     e2=a2.get()
     PASHASH2 = hashlib.md5(e2.encode("utf-8")).hexdigest()
+    regex = re.compile('[@_!#$%^&*()<>?/\|}{~:]')
     if e1 == "guest" and PASHASH2 == PASHASH1:
         msg = Message(m, text = "you logged in").place(x=100,y= 100)
-    elif run(e1)==1 or run(e2)==1:
+    elif regex.search(e1) == None or regex.search(e2) == None:
         msg = Message(m, text = " don't enter special char ").place(x=100,y= 100)
     elif e1=="" or e2=="":
         msg = Message(m, text = " you didn't enter  ").place(x=100,y= 100)
     else :  msg = Message(m, text = " wrong password or username ").place(x=100,y= 100)
-def run(string):
-	regex = re.compile('[@_!#$%^&*()<>?/\|}{~:]')
-	if(regex.search(string) == None):
-		return 0
-	else:
-		return 1
 m = Tk()
 m.geometry("900x300")
 m.title('                       LOGIN      ')
