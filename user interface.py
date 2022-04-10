@@ -10,7 +10,7 @@ def fcomp():
     regex = re.compile('[@_!#$%^&*()<>?/\|}{~:]')
     if e1 == "guest" and PASHASH2 == PASHASH1:
         msg = Message(m, text = "you logged in").place(x=100,y= 100)
-    elif regex.search(e1) == None or regex.search(e2) == None:
+    elif regex.search(e1) = None or regex.search(e2) = None:
         msg = Message(m, text = " don't enter special char ").place(x=100,y= 100)
     elif e1=="" or e2=="":
         msg = Message(m, text = " you didn't enter  ").place(x=100,y= 100)
