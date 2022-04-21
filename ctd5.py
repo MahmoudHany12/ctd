@@ -109,13 +109,23 @@ def comp():
             elif(bag1==0):
                     r=random.randint(2, 3)
                     if(r==2):
-                        bag2=bag2-y
-                        print(bag1,bag2,bag3)
-                        return
+                        if bag2 ==0:
+                            bag3=bag3-y
+                            print(bag1,bag2,bag3)
+                            return
+                        else :
+                            bag2=bag2-y
+                            print(bag1,bag2,bag3)
+                            return
                     elif(r==3):
-                        bag3=bag3-y
-                        print(bag1,bag2,bag3)
-                        return
+                        if bag3 ==0:
+                            bag2=bag2-y
+                            print(bag1,bag2,bag3)
+                            return
+                        else:
+                            bag3=bag3-y
+                            print(bag1,bag2,bag3)
+                            return
         elif chice==2:
             if(bag2>0):
                 bag2=bag2-y
@@ -124,13 +134,23 @@ def comp():
             elif(bag2==0):
                     r=random.randint(2, 3)
                     if(r==2):
-                        bag1=bag1-y
-                        print(bag1,bag2,bag3)
-                        return
+                        if bag1 ==0:
+                            bag3=bag3-y
+                            print(bag1,bag2,bag3)
+                            return
+                        else:
+                            bag1=bag1-y
+                            print(bag1,bag2,bag3)
+                            return
                     elif(r==3):
-                        bag3=bag3-y
-                        print(bag1,bag2,bag3)
-                        return
+                        if bag3 ==0:
+                            bag1=bag1-y
+                            print(bag1,bag2,bag3)
+                            return
+                        else:
+                            bag3=bag3-y
+                            print(bag1,bag2,bag3)
+                            return
         elif chice==3:
             if(bag3>0):
                 bag3=bag3-y
@@ -139,13 +159,23 @@ def comp():
             elif(bag3==0):
                     r=random.randint(2, 3)
                     if(r==2):
-                        bag2=bag2-y
-                        print(bag1,bag2,bag3)
-                        return
+                         if bag2 ==0:
+                            bag1=bag1-y
+                            print(bag1,bag2,bag3)
+                            return
+                         else:
+                            bag2=bag2-y
+                            print(bag1,bag2,bag3)
+                            return
                     elif(r==3):
-                        bag1=bag1-y
-                        print(bag1,bag2,bag3)
-                        return
+                         if bag1 ==0:
+                            bag2=bag2-y
+                            print(bag1,bag2,bag3)
+                            return
+                         else:
+                            bag1=bag1-y
+                            print(bag1,bag2,bag3)
+                            return
 while(c!=-1):
     if(c==0):
         yourturn()
