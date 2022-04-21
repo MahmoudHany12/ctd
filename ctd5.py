@@ -19,7 +19,7 @@ def yourturn():
             return
         else:
             x=int(input("enter number u want to remove:"))
-            if x<0:
+            if x<=0:
                 print("enter number of ball from 1 to 5 try again")
                 yourturn()
                 return
@@ -42,7 +42,7 @@ def yourturn():
             return
          else: 
             x=int(input("enter no u want to remove:"))
-            if x<0:
+            if x<=0:
                 print("enter number of ball from 1 to 5 try again")
                 yourturn()
                 return
@@ -65,7 +65,7 @@ def yourturn():
             return
          else:
             x=int(input("enter no u want to remove:"))
-            if x<0:
+            if x<=0:
                 print("enter number of ball from 1 to 5 try again")
                 yourturn()
                 return
